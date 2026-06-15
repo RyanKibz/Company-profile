@@ -23,7 +23,7 @@ header h2 {
 section {
     margin bottom:2rem;
 
-    /*style the category titles (e.g., "vehicle sales, EV support) */
+ /*Style the category titles (e.g., "vehicle sales, EV support) */
     section h3 {
         font-size: 1.2rem;
         font-weight: 600;
@@ -33,4 +33,21 @@ section {
         align-items: center;
         gap: 8px; /* Spaces the emoji slightly away from the text */  
     }
-    /*
+
+    /* Style the unordered lists */
+ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Style individual list items to match the custom bullet appearance */
+li {
+    font-size: 1rem;
+    color: #e0e0e0; /* Slightly off-white for better readability */
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    
+  
+
