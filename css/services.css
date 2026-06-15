@@ -19,3 +19,18 @@ header h2 {
     colour:ffffff
 
 }
+/*Style each service group container*/
+section {
+    margin bottom:2rem;
+
+    /*style the category titles (e.g., "vehicle sales, EV support) */
+    section h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Spaces the emoji slightly away from the text */  
+    }
+    /*
