@@ -1,0 +1,21 @@
+/*Reset margin lines and set up the dark themed background*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dcd6d6; /* Dark theme background */
+  color: rgb(0,0,0,); /* White text for contrast */
+  font-family: Arial, sans-serif; /* Set a clean font */
+}
+/*Container to restrict maximum width and center content on larger screens*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*Style the main "services provided" header*/
+header h2 {
+    font size:1.5rem;
+    font weight:600;
+    margin bottom:1.5rem;
+    colour:ffffff
+
+}
