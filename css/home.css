@@ -1,0 +1,125 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+.nav-home {
+    background-color: #111;
+    padding: 15px 8%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h3 {
+    color: aqua;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: aqua;
+}
+
+/* ===== HERO SECTION ===== */
+#home {
+    position: relative;
+    min-height: 100vh;
+
+    background-image: url("https://images.unsplash.com/photo-1562003596-a5827707367d?q=80&w=1170&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0 8%;
+    color: white;
+}
+
+/* Dark Overlay */
+#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* Keep content above overlay */
+#home h1,
+#home h2,
+#home p,
+#home .btn {
+    position: relative;
+    z-index: 1;
+}
+
+#home h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+#home p {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 14px 32px;
+    background: aqua;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+

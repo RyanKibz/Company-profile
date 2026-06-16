@@ -1,0 +1,72 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* BRAND SECTION */
+        .brand {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .brand h1 {
+            font-size: 40px;
+        }
+
+        .tagline {
+            color: red;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .about {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* ACHIEVEMENTS SECTION */
+        .achievements {
+            padding: 60px 20px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: red;
+        }
+
+        .milestones {
+            margin-top: 40px;
+        }
+
+        .milestones ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .milestones li {
+            margin: 10px 0;
+        }
+
+        .testimonial {
+            margin-top: 30px;
+            font-style: italic;
+        }
