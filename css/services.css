@@ -1,85 +1,87 @@
-/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #7898d3;
-  color: #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7898d3;
+    color: #e0e0e0;
 }
 
 /* Services Section */
 #services {
-  padding: 60px 20px;
-  min-height: 100vh;
+    padding: 60px 20px;
+    min-height: 100vh;
 
-  background-image:
-    linear-gradient(rgba(116, 139, 162, 0.368), rgba(5, 62, 72, 0.356)),
-    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+    background-image:
+        linear-gradient(
+            rgba(116, 139, 162, 0.368),
+            rgba(5, 62, 72, 0.356)
+        ),
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
 /* Section Title */
 #services h2 {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 3rem;
-  color: #f5f5f5;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 3rem;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Service Cards */
 #services article {
-  background: rgba(60, 60, 60, 0.9);
-  border: 1px solid #6b6b6b;
-  border-radius: 12px;
-  padding: 25px;
-  transition: 0.3s ease;
+    background: rgba(60, 60, 60, 0.9);
+    border: 1px solid #6b6b6b;
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s ease;
 }
 
 #services article:hover {
-  transform: translateY(-5px);
-  background: rgba(75, 75, 75, 0.95);
+    transform: translateY(-5px);
+    background: rgba(75, 75, 75, 0.95);
 }
 
 /* Card Titles */
 #services article h3 {
-  color: #d3d3d3;
-  margin-bottom: 15px;
-  font-size: 1.4rem;
+    color: #d3d3d3;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
 }
 
 /* Lists */
 #services article ul {
-  list-style: none;
+    list-style: none;
 }
 
 #services article li {
-  padding: 10px 0;
-  border-bottom: 1px solid #8298c9;
-  color: #cfcfcf;
+    padding: 10px 0;
+    border-bottom: 1px solid #8298c9;
+    color: #cfcfcf;
 }
 
 #services article li:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  #services h2 {
-    font-size: 2rem;
-  }
+    #services h2 {
+        font-size: 2rem;
+    }
 }
