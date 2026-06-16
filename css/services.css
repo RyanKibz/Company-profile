@@ -1,65 +1,85 @@
-/*Reset margin lines and set up the dark themed background*/
-body {
-    background-image: url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwc2VydmljZXN8ZW58MHx8MHx8fDA%3D);    background-image-repeat: no-repeat;/* Optional background image */
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #dcd6d6; /* Dark theme background */
-  color: #7a0813; /* White text for contrast */
-  font-family: Arial, sans-serif; /* Set a clean font */
-}
-/*Container to restrict maximum width and center content on larger screens*/
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/*Style the main "services provided" header*/
-header h2 {
-    font-size: 1.5rem;
-    font weight: 600;
-    margin-bottom: 1.5rem;
-    color: #7a0813;
-
-}
-/*Style each service group container*/
-section {
-    margin-bottom: 2rem;
-
- /*Style the category titles (e.g., "vehicle sales, EV support) */
-    section h3 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-top: 0;
-        margin-bottom: 0.75rem;
-        display: flex;
-        align-items: center;
-        gap: 8px; /* Spaces the emoji slightly away from the text */  
-    }
-
-/* Style the unordered lists */
-ul {
-    list-style-type: none; /* Removes default bullet points */
-    padding-left: 0;
-    margin: 0;
+  box-sizing: border-box;
 }
 
-/* Style individual list items to match the custom bullet appearance */
-li {
-    font-size: 1rem;
-    color: #f5f5f5 /* Slightly off-white for better readability */
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.5rem;
-    }
-
-/* Create custom, crisp bullet points using the ::before pseudo-element */
-li::before {
-    content: "• ";
-    color: #7a0813;
-    font-size: 1.2rem;
-    line-height: 1;
-    top: 50%;
-    /* Centers the bullet vertically next to the text */
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #7898d3;
+  color: #e0e0e0;
 }
-    
-  
 
+/* Services Section */
+#services {
+  padding: 60px 20px;
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(rgba(116, 139, 162, 0.368), rgba(5, 62, 72, 0.356)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Section Title */
+#services h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 3rem;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Service Cards */
+#services article {
+  background: rgba(60, 60, 60, 0.9);
+  border: 1px solid #6b6b6b;
+  border-radius: 12px;
+  padding: 25px;
+  transition: 0.3s ease;
+}
+
+#services article:hover {
+  transform: translateY(-5px);
+  background: rgba(75, 75, 75, 0.95);
+}
+
+/* Card Titles */
+#services article h3 {
+  color: #d3d3d3;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* Lists */
+#services article ul {
+  list-style: none;
+}
+
+#services article li {
+  padding: 10px 0;
+  border-bottom: 1px solid #8298c9;
+  color: #cfcfcf;
+}
+
+#services article li:last-child {
+  border-bottom: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #services h2 {
+    font-size: 2rem;
+  }
+}
